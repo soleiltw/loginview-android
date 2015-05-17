@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">LoginView</string>
+    <string name="hello_world">Hello my friend, here are some login view you can check it out.</string>
+    <string name="action_settings">Settings</string>
+</resources>
