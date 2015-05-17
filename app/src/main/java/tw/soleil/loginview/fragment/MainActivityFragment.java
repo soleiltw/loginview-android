@@ -1,5 +1,6 @@
 package tw.soleil.loginview.fragment;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
@@ -37,6 +38,7 @@ public class MainActivityFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 Log.i(LoginView.TAG, "Start intent with ViewPagerLoginActivity");
+
                 Intent loginIntent = new Intent(getActivity(), ViewPagerLoginActivity.class);
                 startActivityForResult(loginIntent, ViewPagerLoginActivity.LOGINCODE);
             }
@@ -49,6 +51,12 @@ public class MainActivityFragment extends Fragment {
 
         if (requestCode == ViewPagerLoginActivity.LOGINCODE) {
             Log.i(LoginView.TAG, "Login from ViewPagerLoginActivity");
+            Log.d(LoginView.TAG, "Result Code is: " + resultCode);
+
+            if (resultCode == Activity.RESULT_OK) {
+                Log.i(LoginView.TAG, "Login success.");
+            }
+
         }
     }
 }
