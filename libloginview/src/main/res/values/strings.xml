@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="libloginview_app_name">LibLoginView</string>
+    <string name="libloginview_hello_world">Hello world!</string>
+    <string name="libloginview_action_settings">Settings</string>
+
+</resources>
